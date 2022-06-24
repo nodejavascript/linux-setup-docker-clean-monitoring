@@ -1,0 +1,24 @@
+{
+  "name": "linux-setup-docker-clean-monitoring",
+  "version": "1.0.0",
+  "description": "Copy my setup scripts for a new hosted instance complete with docker and node telemetry using Grafana.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejavascript/linux-setup-docker-clean-monitoring.git"
+  },
+  "keywords": [
+    "Grafana",
+    "Docker",
+    "Prom"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/issues"
+  },
+  "homepage": "https://github.com/nodejavascript/linux-setup-docker-clean-monitoring#readme"
+}

@@ -1,0 +1,23 @@
+global:
+
+  scrape_interval: 30s
+  external_labels:
+    monitor: 'Monitoring'
+
+scrape_configs:
+
+  - job_name: 'prometheus' #self metrics
+    static_configs:
+      - targets: ['serverprivateip:9090']
+
+  - job_name: 'node-exporter' #ubuntu metrics
+    static_configs:
+      - targets: ['serverprivateip:9100']
+
+  - job_name: 'cAdvisor' #docker metrics
+    static_configs:
+      - targets: ['serverprivateip:8080']
+
+  - job_name: 'mqtt-exporter'
+    static_configs:
+      - targets: ['serverprivateip:9001']

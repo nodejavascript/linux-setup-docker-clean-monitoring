@@ -1,0 +1,55 @@
+debug = true
+checkNewVersion = true
+logLevel = "ERROR"
+defaultEntryPoints = ["https","http"]
+
+[entryPoints]
+  [entryPoints.http]
+    address = ":80"
+    # redirect http to https
+    [entryPoints.http.redirect]
+    entryPoint = "https"
+  [entryPoints.https]
+    address = ":443"
+    [entryPoints.https.tls]
+
+[retry]
+
+[docker]
+  # Docker server endpoint.
+  # Can be a tcp or a unix socket endpoint.
+  endpoint = "unix:///var/run/docker.sock"
+
+  # default domain if not specified by the container
+  # Can be overridden by setting the "traefik.domain" label on a services.
+  domain = "myblog.com"
+
+  # Enable watch docker changes.
+  watch = true
+
+  # Expose containers by default in Traefik.
+  # If set to false, containers that don't have `traefik.enable=true` will be ignored.
+  exposedbydefault = false
+
+[acme]
+  # Email address used for registration.
+  email = "support@myblog.com"
+
+  # File or key used for certificates storage.
+  storage = "acme.json"
+
+  #Enable certificate generation on frontends Host rules.
+  OnHostRule = true
+
+  # Entrypoint to proxy acme apply certificates to.
+  entryPoint = "https"
+
+  # Use a HTTP-01 acme challenge rather than TLS-SNI-01 challenge
+  [acme.httpChallenge]
+  entryPoint = "http"
+
+  [[acme.domains]]
+  main = "myblog.com"
+
+  [[acme.domains]]
+  main = "myblog2.com"

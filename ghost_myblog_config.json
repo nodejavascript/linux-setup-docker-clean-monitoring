@@ -1,0 +1,41 @@
+{
+  "url": "https://myblog.com",
+  "server": {
+      "host": "0.0.0.0",
+      "port": 2368
+  },
+  "database": {
+      "client": "mysql",
+      "connection": {
+          "charset": "utf8mb4"
+      }
+  },
+  "logging": {
+      "transports": [
+          "file",
+          "stdout"
+      ]
+  },
+  "process": "systemd",
+  "paths": {
+      "contentPath": "/var/lib/ghost/content"
+  },
+  "spam": {
+    "user_login": {
+      "freeRetries": 100
+    }
+  },
+  "mail": {
+    "transport": "SMTP",
+    "options": {
+      "service": "Mailgun",
+      "host": "smtp.mailgun.org",
+      "port": 465,
+      "secureConnection": true,
+      "auth": {
+        "user": "noreply@myblog.com",
+        "pass": ""
+      }
+    }
+  }
+}
