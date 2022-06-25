@@ -48,6 +48,10 @@
 
 <!-- ABOUT THE PROJECT -->
 # For my Ubuntu fresh installs
+## nmon, netdata, portainer, dozzle, grafana, prometheus, node-exporter, mqtt-exporter, cadvisor, uptime-kuma, traefik, mysql, phpmyadmin, redis, mongodb
+
+
+## To qualify
 - This assumes your new linux install just spun up and you can terminal into it.
 
 - Copy & paste at <img src="https://upload.wikimedia.org/wikipedia/en/2/20/WilRiker.jpg" alt="Will" title="Will" width="50"> and at your own risk. I said it.
@@ -144,7 +148,7 @@ cd linux-setup-docker-clean-monitoring/
 
 - edit anything `MQTT` if you are running an [MQTT Broker like mine](https://github.com/nodejavascript/selfhosted-mqtt-broker-nodejs).
 
-  - You can quick utilize MQTT metrics in grafana by flashing your ESP, Arduino devices with[Tasmota](https://tasmota.github.io/install/).
+  - You can quickly utilize MQTT metrics in grafana by flashing your ESP, Arduino devices with [Tasmota](https://tasmota.github.io/install/).
 
 
 - edit `MYSQL_ROOT_PASSWORD`, `GHOST_DATABASE*` vars if you want to run ghost.
