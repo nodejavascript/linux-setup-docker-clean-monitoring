@@ -123,9 +123,9 @@ ssh-keygen -t rsa -y
 cat ~/.ssh# cat ~/.ssh/id_rsa.pub
 ```
 - *After using the above command*, `copy` the whole public key the command displayed.
-- Then, paste this `SSH key` in your github, gitlab Profile settings.
+- Then, paste this `SSH key` in your [GitHub](https://github.com/settings/keys), [GitLab](https://gitlab.com/-/profile/keys) profile settings.
 
-- `clone` this [nodejavascript/linux-setup-docker-clean-monitoring](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring) (may or may not need `sudo`)
+- `clone` this repo: [linux-setup-docker-clean-monitoring](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring) (may or may not need `sudo`)
 ```
 cd /opt && sudo mkdir github && cd github && git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git && cd linux-setup-docker-clean-monitoring/
 ```
