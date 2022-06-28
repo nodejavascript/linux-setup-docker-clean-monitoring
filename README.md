@@ -65,33 +65,44 @@
 alias mynewserver='ssh username@host'
 ```
 - Provided, you can run one line of commands OR each run command individually.
+- Tested on [digitalocean.com](https://m.do.co/c/ead4a620b8d9) (referral link) with Ubuntu 20.04 (LTS) x64
 
 ## Get started:
 
+### Sign in to your new `server`
+```
+ssh root@publicipaddress
+```
+
 ### Use after `server` is created
 (may or may not need `sudo`)
+
+- During initial `upgrade` sometimes displays an options window. You could manually hit `enter` on these to accept default selection.
+
+- When installing `netdata` sometimes you have to use enter a for a few [Y/n] prompts
+
 ```
-sudo apt-get update && sudo apt-get upgrade -y && sudo apt install nmon -y && sudo bash <(curl -Ss https://my-netdata.io/kickstart.sh) -y && sudo reboot
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt install nmon -y && bash <(curl -Ss https://my-netdata.io/kickstart.sh) -y && sudo reboot
 ```
 OR
 ```
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt install nmon -y
-sudo bash <(curl -Ss https://my-netdata.io/kickstart.sh) -y
+bash <(curl -Ss https://my-netdata.io/kickstart.sh) -y
 sudo reboot
 ```
 
 ### And then, use to install docker.io on `server`
 (may or may not need `sudo`)
 ```
-sudo apt-get update && sudo apt-get upgrade -y && sudo apt install docker.io && sudo systemctl start docker && sudo systemctl enable docker && docker network create web && sudo apt install docker-compose -y && sudo reboot
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt install docker.io -y && sudo systemctl start docker && sudo systemctl enable docker && docker network create web && sudo apt install docker-compose -y && sudo reboot
 ```
 OR
 ```
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt install docker.io
+sudo apt install docker.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
 docker network create web
@@ -102,30 +113,30 @@ sudo reboot
 ### And then, use if you want to build with `nodejs` on `server`
 (may or may not need `sudo`)
 ```
-sudo apt install npm && sudo npm install -g n && n 14.19.2 && n 17.8.0 && sudo reboot
+sudo apt install npm -y && sudo npm install -g n -y && n 14.19.2 && n 17.8.0 && sudo reboot
 ```
 OR
 ```
-sudo apt install npm
-sudo npm install -g n
+sudo apt install npm -y
+sudo npm install -g n -y
 n 14.19.2
 n 17.8.0
 sudo reboot
 ```
 
 ### And then, use if you want to clone any `private` repos on `server`
+This guide uses a key where you hit `enter` 3 times an keep defaults.
+
 ```
-ssh-keygen -t rsa -y && cat ~/.ssh# cat ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
 ```
-OR
-```
-ssh-keygen -t rsa -y
-cat ~/.ssh# cat ~/.ssh/id_rsa.pub
-```
+
 - *After using the above command*, `copy` the whole public key the command displayed.
 - Then, paste this `SSH key` in your [GitHub](https://github.com/settings/keys), [GitLab](https://gitlab.com/-/profile/keys) profile settings.
 
 - `clone` this repo: [linux-setup-docker-clean-monitoring](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring) (may or may not need `sudo`)
+
 ```
 cd /opt && sudo mkdir github && cd github && git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git && cd linux-setup-docker-clean-monitoring/
 ```
@@ -142,9 +153,19 @@ cd linux-setup-docker-clean-monitoring/
 - Make a copy of the example file
 
   ```
-  sudo copy .env.example .env
+  sudo cp .env.example .env
+
+  # edit .env
+  sudo nano .env
+
+  # edit ghost
+  sudo nano ghost_myblog_config.json
+
+  # edit prometheus
+  sudo nano prometheus.yml
   ```
 
+- it's a good time to go get some [strong passwords](https://passwordsgenerator.net/)
 
 - edit anything `MQTT` if you are running an [MQTT Broker like mine](https://github.com/nodejavascript/selfhosted-mqtt-broker-nodejs).
 
