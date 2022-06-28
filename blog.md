@@ -1,4 +1,6 @@
-# I created a smart health data droplet for you
+# I created a droplet for you to
+
+Documentation: [README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md)
 
 ```
 git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git
@@ -10,8 +12,8 @@ git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git
 #### Pay where the facts are.
 <br>
 
-- Offload `docker containers` proven to require seperation from cluster
-- Upgrade `intances` with CPU or memory when clearly you need it.
+- Offload `docker containers` proven to require separation from cluster
+- Upgrade `instances` with CPU or memory when clearly you need it.
 
 **BONUS** : Supports [Tasmota](https://tasmota.github.io/install/) metrics as seen here:
 
@@ -52,9 +54,9 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
 
  - Reactive time-series charts from `grafana` to find anti-patterns and anomalies.
 
-- The `server's` 1) CPU, 2) memory, 3) network and  4) disk usage
+- The `server's` 1) CPU, 2) memory, 3) network and  4) disk usage.
 
-- Each `docker container's` 1) CPU, 2) memory, 3) network and  4) disk usage
+- Each `docker container's` 1) CPU, 2) memory, 3) network and  4) disk usage.
 
   - Real-time `stdout` for [all containers](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/docker-compose.yml#L1)
 
@@ -75,7 +77,7 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
   - what scripts are taxing your resources
   - containers hogging docker resources
 
-## Self hosted integrations.
+## Self hosted integration.
 <br>
 
 - `ghost` blog integrated with
@@ -105,14 +107,14 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
   - real-time services.
 
 
-  `netdata` in monitoring `server`
+  `netdata` monitoring `server`
     ![netdata-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656438350/public/Selection_024.png_vkhiis.png)
 
 - `portainer`, web interface for docker containers
 
 - `dozzle`, real-time stdout for running docker containers
 
-`dozzle` in monitoring my [MQTT Broker](https://github.com/nodejavascript/selfhosted-mqtt-broker-nodejs/blob/main/README.md)
+`dozzle` monitoring my [MQTT Broker](https://github.com/nodejavascript/selfhosted-mqtt-broker-nodejs/blob/main/README.md)
 ![mqtt-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656438779/public/Selection_026.png_izlgvv.png)
 
 
@@ -120,7 +122,7 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
 
 #### Telemetry:
 
-#### `node-exporter` in monitoring `server`
+#### `node-exporter` monitoring `server`
 ![server-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656438102/public/Selection_022.png_fjyzxd.png)
 
 
@@ -133,4 +135,4 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
 
 # HAVE FUN!
 
-See [README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md) for more deails.
+See [README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md) for more details.
