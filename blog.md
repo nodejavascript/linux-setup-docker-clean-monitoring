@@ -1,6 +1,8 @@
-# I created you a self hosted droplet procedure for smart time-series analytics
+# I created a self hosted droplet procedure for smart time-series analytics
 
-Documentation: [README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md)
+### Start your embedded journey with this recipe of 15 docker containers including nmon, netdata, portainer, dozzle, grafana, prometheus, node-exporter, mqtt-exporter, cadvisor, uptime-kuma, traefik, mysql, phpmyadmin, redis, mongodb
+
+Documentation: [Project README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md)
 
 ```
 git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git
@@ -13,7 +15,7 @@ git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git
 <br>
 
 - Offload `docker containers` proven to require separation from cluster
-- Upgrade `instances` with CPU or memory when clearly you need it.
+- Upgrade `instances` with CPU or memory if `factually` it's needed.
 
 **BONUS** : Supports [Tasmota](https://tasmota.github.io/install/) metrics as seen here:
 
@@ -46,11 +48,7 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
 ![docker-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656438277/public/Selection_023.png_ge9txu.png)
 
 
-
-
 ### The following procedure will give you:
-
- *PAY for facts*
 
  - Reactive time-series charts from `grafana` to find anti-patterns and anomalies.
 
@@ -101,6 +99,9 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
 
 - `nmon`, the last resort command-line monitor you will need if your instance is *very unhealthy* (for example docker won't boot)
 
+`nmon` monitoring `server`
+  ![nmon-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656439066/public/Selection_027.png_f8twcl.png)
+
 - `netdata`, real-time granular metrics for watching:
   - installs,
   - script executions or,
@@ -110,7 +111,7 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
   `netdata` monitoring `server`
     ![netdata-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656438350/public/Selection_024.png_vkhiis.png)
 
-- `portainer`, web interface for docker containers
+- `portainer`, web interface for docker containers standard install
 
 - `dozzle`, real-time stdout for running docker containers
 
@@ -118,7 +119,7 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
 ![mqtt-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656438779/public/Selection_026.png_izlgvv.png)
 
 
-- `grafana`, [pre-configured](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring#setup-grafana) setup the [dashboards](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring#add-new-dashboards-with-these-templateids) to monitor time-series metrics with beautiful charts and features.
+- `grafana`, [pre-configured](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring#setup-grafana) setup the [dashboards](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring#add-new-dashboards-with-these-templateids) to [monitor time-series metrics with beautiful charts and features](https://www.google.com/search?q=grafana+time-series+metrics+with+beautiful+charts+and+features&tbm=vid).
 
 #### Telemetry:
 
@@ -132,6 +133,9 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
     - `cadvisor`, provides docker metrics
     - `mqtt-exporter`, provides embedded sensor metrics published to an [MQTT broker like mine](https://github.com/nodejavascript/selfhosted-mqtt-broker-nodejs).
 
+
+#### `prometheus` can scale to many [prom-exporters](https://prometheus.io/docs/instrumenting/exporters/)
+![server-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656442352/public/Selection_028.png_w5vnp0.png)
 
 # HAVE FUN!
 
