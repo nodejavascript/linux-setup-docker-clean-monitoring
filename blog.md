@@ -2,6 +2,7 @@ Title: I created a self hosted droplet procedure for smart time-series analytics
 
 Excerpt: Start your embedded journey with this recipe of 15 docker containers including nmon, netdata, portainer, dozzle, grafana, prometheus, node-exporter, mqtt-exporter, cadvisor, uptime-kuma, traefik, mysql, phpmyadmin, redis, mongodb
 
+
 LICENSE: MIT
 
 Documentation: [Project README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md)
@@ -9,7 +10,6 @@ Documentation: [Project README.md](https://github.com/nodejavascript/linux-setup
 ```
 git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git
 ```
-
 
 ## Pay smarter.
 
@@ -26,7 +26,9 @@ git clone git@github.com:nodejavascript/linux-setup-docker-clean-monitoring.git
 
 ## Features support [r/selfhosted](https://www.reddit.com/r/selfhosted/):
 
-All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/docker-compose.yml)
+[<img src="https://img.shields.io/reddit/subreddit-subscribers/selfhosted?style=for-the-badge" alt="subreddit-subscribers/selfhosted">](https://www.reddit.com/r/selfhosted/)
+
+List of containers in [docker-compose.yml](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/docker-compose.yml)
 
 ```19999 : netdata
 9000 : portainer
@@ -45,6 +47,7 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
 8081 : rediscommander
 27017 : mongodb
 ```
+
 
 #### `cadvisor` monitoring all `docker` listed in [docker-compose.yml](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/docker-compose.yml)
 ![docker-snapshot](https://res.cloudinary.com/nodejavascript-com/image/upload/v1656438277/public/Selection_023.png_ge9txu.png)
