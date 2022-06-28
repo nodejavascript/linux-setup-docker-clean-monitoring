@@ -1,6 +1,6 @@
-# I created a self hosted droplet procedure for smart time-series analytics
+Title: I created a self hosted droplet procedure for smart time-series analytics
 
-### Start your embedded journey with this recipe of 15 docker containers including nmon, netdata, portainer, dozzle, grafana, prometheus, node-exporter, mqtt-exporter, cadvisor, uptime-kuma, traefik, mysql, phpmyadmin, redis, mongodb
+Excerpt: Start your embedded journey with this recipe of 15 docker containers including nmon, netdata, portainer, dozzle, grafana, prometheus, node-exporter, mqtt-exporter, cadvisor, uptime-kuma, traefik, mysql, phpmyadmin, redis, mongodb
 
 Documentation: [Project README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md)
 
