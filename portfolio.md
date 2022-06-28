@@ -1,15 +1,21 @@
-Title: I released a procedure using 15 docker containers working together for metrics.
+Title: I released a procedure using 15 docker containers working together for metrics
 
-Excerpt: Use this procedure once, take a snapshot, use as cookie-cutter to grow.
+Excerpt: 1) Use this procedure once, 2) take a snapshot, 3) use as cookie-cutter to grow and save $
 
+## Hello! I just released new open source development.
 
-<iframe src="https://nodejavascript.com/i-created-a-self-hosted-droplet-procedure-for-smart-time-series-analytics/" frameborder="0" allowfullscreen style="width:100%;height:600px"></iframe>
+Go straight to the procedure in [README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md)
 
+It's instructions of knowledge put together to jump start embedded systems analysis, with emphasis on helping the selfhosting community using mqtt done for you.
 
+Included are pre-configurations for ghost blog, tools and databases for api development and lots of smart metrics to provide time series analysis.
 
-# HAVE FUN!
+### Read the *many* features from this open-source project (my blog article):
 
-See [README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md) for more details.
+Link: https://nodejavascript.com/i-created-a-self-hosted-droplet-procedure-for-smart-time-series-analytics
+
+## HAVE FUN!
+See my [GitHub](https://github.com/nodejavascript) for more projects.
 
 ## Contact
 * Home - [nodejavascript.com](https://nodejavascript.com?ref=githubContact)
