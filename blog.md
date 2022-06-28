@@ -1,4 +1,4 @@
-# I created a droplet for you to
+# I created you a selfhosted droplet procedure for smart time-series analytics
 
 Documentation: [README.md](https://github.com/nodejavascript/linux-setup-docker-clean-monitoring/blob/master/README.md)
 
@@ -77,7 +77,7 @@ All containers in [docker-compose.yml](https://github.com/nodejavascript/linux-s
   - what scripts are taxing your resources
   - containers hogging docker resources
 
-## Self hosted integration.
+## Selfhosted integration.
 <br>
 
 - `ghost` blog integrated with
