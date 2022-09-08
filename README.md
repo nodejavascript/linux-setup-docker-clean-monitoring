@@ -82,14 +82,14 @@ ssh root@publicipaddress
 - When installing `netdata` sometimes you have to use enter a for a few [Y/n] prompts
 
 ```
-sudo apt-get update && sudo apt-get upgrade -y && sudo apt install nmon -y && bash <(curl -Ss https://my-netdata.io/kickstart.sh) -y && sudo reboot
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt install nmon -y && bash <(curl -Ss https://my-netdata.io/kickstart.sh) && sudo reboot
 ```
 OR
 ```
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt install nmon -y
-bash <(curl -Ss https://my-netdata.io/kickstart.sh) -y
+bash <(curl -Ss https://my-netdata.io/kickstart.sh)
 sudo reboot
 ```
 
