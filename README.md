@@ -1,3 +1,12 @@
+# linux-setup-docker-clean-monitoring
+
+Running your own blog should not mean renting three services to do it. This is one Docker Compose stack that stands a Ghost blog up behind Traefik and watches it with Prometheus — your server, your database, your data.
+
+**What is here:** `docker-compose.yml` defines the stack · `traefik.toml` routes and terminates the traffic · `prometheus.yml` scrapes it · `ghost_myblog_config.json` is the blog's own configuration · `.env.example` carries the host names and secrets · `blog.md` and `portfolio.md` are the content drafts.
+
+Setup is documented below.
+
+---
 <div id="top"></div>
 
 <!--
